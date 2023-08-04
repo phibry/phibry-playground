@@ -22,7 +22,7 @@ jobs:
         working-directory: phibry
 
       - name: Build
-        run: npm run dev
+        run: npm run build
         working-directory: phibry
 
       - name: Deploy
