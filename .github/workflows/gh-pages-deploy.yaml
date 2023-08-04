@@ -13,18 +13,17 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          path: phibry
 
       - name: Setup Node
         uses: actions/setup-node@v3
 
-      - run: npm ci
-        with:
-          path: phibry
+      - name: Clean install
+        run: npm ci
+        working-directory: phibry
 
       - name: Build project
         run: npm run build
+        working-directory: phibry
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
