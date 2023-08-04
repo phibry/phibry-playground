@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "/phibry-playground/phibry",
+    base: "/phibry-playground/",
     plugins: [react()],
 })
