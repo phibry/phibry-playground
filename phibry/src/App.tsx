@@ -1,6 +1,6 @@
 const App = () => {
     return (
-        <>hello world!</>
+        <>this is the App component</>
     );
 }
 
