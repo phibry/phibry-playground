@@ -4,14 +4,16 @@ import App from './App.tsx';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import RouterError from './RouterError.tsx';
 
+const BASE_PATH = "/phibry-playground/";
+
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: BASE_PATH,
         element: <App />,
         errorElement: <RouterError />,
     },
     {
-        path: "/vizirino",
+        path: BASE_PATH + "vizirino",
         element: <div>Vizirino</div>
     },
 ]);
