@@ -7,13 +7,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <BrowserRouter basename={import.meta.env.DEV ? "/" : "phibry-playground/"}>
             <Routes>
-                <Route
-                    path="/"
-                    element=<App />
-                />
-                <Route
-                    path="vizirino"
-                    element=<div>Vizirino</div> />
+                <Route path="/" element={<App />} />
+                <Route path="vizirino" element={<div>Vizirino</div>} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
