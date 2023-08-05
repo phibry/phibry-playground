@@ -29,7 +29,7 @@ jobs:
         run: npm install
         working-directory: phibry
       - name: Build
-        run: npm run build && cp ./phibry/dist/index.html ./phibry/dist/404.html
+        run: npm run build && cp ./dist/index.html ./dist/404.html
         working-directory: phibry
       - name: Set up Pages
         uses: actions/configure-pages@v3
